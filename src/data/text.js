@@ -1,0 +1,63 @@
+export const textMenu = {
+	
+
+}
+
+export const textStat = {
+	vit: 'Vitalidad',
+	arm: 'Armadura',
+	pa: 'PA',
+	pm: 'PM',
+	pot: 'Potencia',
+	str: 'Fuerza',
+	int: 'Inteligencia',
+	agi: 'Agilidad',
+	cha: 'Suerte',
+	crt: '% Crítico',
+	dmg: 'Daños',
+	strDmg: 'Daños tierra',
+	intDmg: 'Daños fuego',
+	agiDmg: 'Daños aire',
+	chaDmg: 'Daños agua',
+	crtDmg: 'Daños críticos',
+	tpDmg: 'Daños trampas',
+	speDmg: '% Daños hechizos',
+	wepDmg: '% Daños armas',
+	res: '% Resistencia',
+	reDmg: '% Reenvío',
+	cur: 'Curas',
+	wis: 'Sabiduria',
+	pp: 'Prospección',
+	earth: 'Tierra',
+	fire: 'Fuego',
+	air: 'Aire',
+	water: 'Agua',
+	neutral: 'Puro'
+}
+
+export const descriptionStat = {
+	vit: 'La Vitalidad es tu esencia vital. La partida termina si llega a 0.',
+	arm: 'La Armadura mitiga los daños recibidos antes que la vitalidad.',
+	pa: 'Los Puntos de Acción (PA) permiten utilizar habilidades. Se restablezen al inicio de cada turno.',
+	pm: 'Los Puntos de Manejo (PM) permiten utilizar habilidades. Se restablezen al inicio de cada combate.',
+	pot: 'La Potencia aumenta los daños de todos los elementos.',
+	str: 'La Fuerza aumenta los daños del elemento Tierra.',
+	int: 'La Inteligencia aumenta los daños del elemento Fuego.',
+	agi: 'La Agilidad aumenta los daños del elemento Aire.',
+	cha: 'La Suerte aumenta los daños del elemento Agua.',
+	crt: 'El % Crítico aumenta el índice de golpes crítcos.',
+	dmg: 'Los Daños aumentan los daños fijos de todos los elementos.',
+	strDmg: 'Los Daños tierra aumentan los daños fijos del elemento Tierra.',
+	intDmg: 'Los Daños fuego aumentan los daños fijos del elemento Fuego.',
+	agiDmg: 'Los Daños aire aumentan los daños fijos del elemento Aire.',
+	chaDmg: 'Los Daños agua aumentan los daños fijos del elemento Agua.',
+	crtDmg: 'Los Daños críticos aumentan los daños críticos.',
+	tpDmg: 'Aumenta el daño causado con las trampas.',
+	speDmg: 'El % Daños hechizos aumentan los daños de hechizos.',
+	wepDmg: 'El % Daños hechizos aumentan los daños de armas.',
+	res: 'La resistencia disminuye el daño recibido. El máximo daño reducible es 50%.',
+	reDmg: 'El % Reenvío devuelve parte del daño sufrido al agresor.',
+	cur: 'Las Curas aumentan las curaciones realizadas.',
+	wis: 'La Sabiduria aumenta la ganancia de Kamas.',
+	pp: 'La prospección aumenta la tasa de aparición de objetos exomágicos en la tienda.',
+}

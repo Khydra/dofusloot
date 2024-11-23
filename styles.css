@@ -1,0 +1,137 @@
+@font-face {
+	font-family: 'Jersey 10';
+	src: url('./res/font/Jersey_10/Jersey10-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kanit';
+	src: url('./res/font/Kanit/Kanit-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--bg1: #30323a;
+	--bg2: #0d0f19;
+	--yellow: #ba6d1f;
+	--grey: #485260;
+	--red: #a81134;
+	--blue: #00a6f2;
+	--green: #70ac4c;
+	--white: #d4d4d4;
+	--str: #a17535;
+	--int: #ff6d01;
+	--agi: #88c465;
+	--cha: #7fd0fe;
+	--neu: #d1a855;
+}
+
+body {
+	user-select: none;
+	margin: 0;
+    padding: 0;
+    background-color: #111;
+    font-family: "Jersey 10", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    /*font-family: 'Kanit', sans-serif;*/
+}
+
+a {
+	color: var(--blue); 
+    text-decoration: none; 
+    font: inherit; 
+}
+
+a:hover {color: var(--yellow); }
+
+#app {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1280px;
+	height: 720px;
+	transform: translate(-50%, -50%);
+	background-color: var(--bg2);
+	border: 2px solid black;
+	overflow: hidden;
+}
+
+.scene {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.black-scene {
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 99;
+}
+
+.yellow {color: var(--yellow) !important;}
+.grey {color: var(--grey) !important;}
+.red {color: var(--red) !important;}
+.blue {color: var(--blue) !important;}
+.green {color: var(--green) !important;}
+
+.earth {color: var(--str) !important;}
+.fire {color: var(--int) !important;}
+.air {color: var(--agi) !important;}
+.water {color: var(--cha) !important;}
+.neutral {color: var(--neu) !important;}
+
+.disabled {
+	pointer-events: none;
+	filter: brightness(0.4);
+}
+
+.stroke {
+    text-shadow:
+    -1px -1px 0 #000,
+     0   -1px 0 #000,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
+}
+
+.stroke-2 {
+    text-shadow:
+    -2px -2px 0 #000,
+     0   -2px 0 #000,
+     2px -2px 0 #000,
+     2px  0   0 #000,
+     2px  2px 0 #000,
+     0    2px 0 #000,
+    -2px  2px 0 #000,
+    -2px  0   0 #000;
+}
+
+/*INIT*/
+
+.init-scene { cursor: pointer; }
+
+.init-tittle {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    color: var(--yellow);
+    font-size: 200px;
+}
+
+.init-prompt {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 40px;
+    animation: init-prompt-flash 2s linear infinite;
+}
+
+@keyframes init-prompt-flash { 50% { filter: brightness(0.6); } }

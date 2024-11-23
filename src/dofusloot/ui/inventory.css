@@ -1,0 +1,59 @@
+.inventory-container {
+	top: 190px;
+	left: 10px;
+	width: 625px;
+	height: 430px;
+}
+
+.inventory-gold-label {
+	position: absolute;
+	top: 25px;
+	right: 70px;
+	font-size: 32px;
+
+	color: var(--yellow);
+}
+
+.inventory-gear-container {
+	position: absolute;
+	bottom: 85px;
+	left: 49px;
+	width: 140px;
+	height: 335px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-evenly;
+	gap: 0 5px;
+}
+
+.inventory-bag-container {
+	position: absolute;
+	bottom: 85px;
+	right: 49px;
+	width: 330px;
+	height: 265px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-evenly;
+	gap: 0 5px;
+}
+
+.inventory-dofam-container {
+	position: absolute;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%);
+	bottom: 15px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	gap: 0 5px;
+}
+
+.inventory-bag:hover, .inventory-gear:hover {
+
+}

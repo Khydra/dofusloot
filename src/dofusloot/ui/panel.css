@@ -1,0 +1,151 @@
+.panel-container {
+	top: 450px;
+	right: 310px;
+	width: 325px;
+	height: 260px;
+}
+
+.panel-text-container {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	height: 260px;
+	width: 290px;
+
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow-y: auto;
+}
+
+.panel-text-container::-webkit-scrollbar { width: 14px; }
+.panel-text-container::-webkit-scrollbar-track { background: transparent; }
+.panel-text-container::-webkit-scrollbar-thumb { 
+    background: var(--yellow); 
+    border-radius: 2px;
+}
+
+.panel-text {
+	position: absolute;
+	padding: 4px;
+	color: var(--white);
+}
+
+.panel-spell-container {
+	position: absolute;
+	top: 85px;
+	left: 25px;
+	width: 270px;
+	height: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-evenly;
+	justify-content: space-evenly;
+	gap: 5px;
+}
+
+.panel-spell {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+
+	background-color: var(--bg1);
+}
+
+.panel-spell-image {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	font-size: 32px;
+	text-align: center;
+	line-height: 40px;
+	text-shadow: -1px -1px 0 #000,0 -1px 0 #000,1px -1px 0 #000,1px 0 0 #000,1px 1px 0 #000, 0 1px 0 #000,-1px 1px 0 #000, -1px 0 0 #000;
+	color: white;
+	border-radius: 5px;
+	box-shadow: inset 1px 1px 1px black, inset -1px -1px 1px black, inset -1px 1px 1px black, inset 1px -1px 1px black;
+	filter: brightness(1);
+	cursor: pointer;
+}
+
+.panel-spell-image:hover { 
+	box-shadow: inset 1px 1px 1px var(--yellow), inset -1px -1px 1px var(--yellow), inset -1px 1px 1px var(--yellow), inset 1px -1px 1px var(--yellow);
+	filter: brightness(1.2); 
+}
+
+.panel-spell-image-disabled {
+	filter: brightness(0.5);
+	pointer-events: none;
+}
+
+.panel-summon-container {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 320px;
+	height: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	
+	justify-content: center;
+	gap: 10px;
+}
+
+.panel-summon {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+
+	background-color: var(--bg1);
+}
+
+.panel-summon-image {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	font-size: 32px;
+	text-align: center;
+	line-height: 40px;
+	text-shadow: -1px -1px 0 #000,0 -1px 0 #000,1px -1px 0 #000,1px 0 0 #000,1px 1px 0 #000, 0 1px 0 #000,-1px 1px 0 #000, -1px 0 0 #000;
+	color: white;
+	border-radius: 5px;
+	box-shadow: inset 1px 1px 1px black, inset -1px -1px 1px black, inset -1px 1px 1px black, inset 1px -1px 1px black;
+	filter: brightness(1);
+	cursor: pointer;
+}
+
+.panel-summon-image:hover { 
+	box-shadow: inset 1px 1px 1px var(--yellow), inset -1px -1px 1px var(--yellow), inset -1px 1px 1px var(--yellow), inset 1px -1px 1px var(--yellow);
+	filter: brightness(1.2); 
+}
+
+
+.panel-summon-image-disabled {
+	filter: brightness(0.5);
+	pointer-events: none;
+}
+
+.panel-main-button, .panel-main-button-disabled {
+	position: absolute;
+	left: 25px;
+	bottom: 16px;
+	width: 270px;
+	height: 60px;
+	background-color: var(--yellow);
+	text-align: center;
+
+	font-size: 32px;
+	align-content: center;
+	border-radius: 5px;
+	box-shadow: inset 1px 1px 1px black, inset -1px -1px 1px black, inset -1px 1px 1px black, inset 1px -1px 1px black;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.panel-main-button-disabled {
+	filter: brightness(0.5);
+	pointer-events: none;
+}
+
+.panel-main-button:hover {filter: brightness(1.2);}

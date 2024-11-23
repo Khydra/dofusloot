@@ -1,0 +1,46 @@
+.shop-container {
+	bottom: 10px;
+	left: 10px;
+	width: 625px;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: center;
+}
+
+.shop-item-container {
+	position: relative;
+	width: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.shop-button {
+	position: absolute;
+	bottom: 10px;
+	width: 60px;
+	height: 60px;
+	background-color: var(--yellow);
+	text-align: center;
+	font-weight: 800;
+	font-size: 32px;
+	align-content: center;
+	border-radius: 5px;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.shop-button:hover, .shop-slot:hover{ filter: brightness(1.2); }
+
+.shop-button-lock {
+	left: 30px;
+	background-size: 65%;
+}
+.shop-button-reroll {
+	right: 30px;
+	background-size: 55%;
+}

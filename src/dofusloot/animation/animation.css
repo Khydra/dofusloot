@@ -1,0 +1,38 @@
+.number-anim {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	font-size: 28px;
+  	font-weight: bold;
+	animation: damageAnimation 1s ease-out forwards;
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black; 
+    z-index: 99;
+}
+
+
+
+/* Animación de daño */
+@keyframes damageAnimation {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(1.3) translateY(-10px);
+  }
+  40% {
+    transform: scale(1.15) translateY(-25px);
+  }
+  60% {
+    transform: scale(1) translateY(-40px);
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(0.9) translateY(-60px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.8) translateY(-80px);
+    opacity: 0;
+  }
+}

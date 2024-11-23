@@ -1,0 +1,192 @@
+.status-container {
+	top: 50px;
+	left: 10px;
+	width: 625px;
+	height: 130px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.status-tab-container {
+	position: absolute;
+	top: -40px;
+	width: 300px;
+	height: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.status-tab {
+	position: relative;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	align-content: center;
+	font-size: 32px;
+	color: var(--bg2);
+	background: var(--bg1);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	transition: .1s;
+	cursor: pointer;
+}
+
+.status-tab:hover {
+	color: var(--yellow);
+}
+
+.status-tab-selected {
+	color: var(--bg1);
+	background-color: var(--bg2);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	pointer-events: none;
+}
+
+.status-location-container {
+	position: absolute;
+	top: -40px;
+	right: 0px;
+	width: 325px;
+	height: 40px;
+	background-color: var(--bg2);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.status-location {
+	position: absolute;
+	left: 20px;
+	top: 5px;
+	font-size: 32px;
+	color: var(--yellow);
+}
+
+.status-portrait {
+	position: absolute;
+	bottom: 15px;
+	left: 17px;
+	width: 100px;
+	height: 100px;
+	background-size: 100%;
+	border-radius: 5px;
+	border: 3px solid var(--yellow);
+}
+
+.status-portrait:after {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	box-shadow: inset 1px 1px 1px black, inset -1px -1px 1px black, inset -1px 1px 1px black, inset 1px -1px 1px black;
+}
+
+.status-bar-container {
+	position: absolute;
+	width: 217px;
+	height: 15px;
+	border-radius: 5px;
+	border: 3px solid var(--bg2);
+}
+
+.status-health-bar-container {
+	position: absolute;
+	top: 25px;
+	left: 140px;
+	outline: 2px solid var(--red);
+}
+
+.status-armor-bar-container {
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	outline: 2px solid var(--grey);
+}
+
+.status-mana-bar-container {
+	position: absolute;
+	top: 59px;
+	left: 140px;
+	outline: 2px solid var(--blue);
+}
+
+.status-energy-bar-container {
+	position: absolute;
+	top: 59px;
+	right: 20px;
+	outline: 2px solid var(--green);
+}
+
+.status-bar {
+	position: absolute;
+	height: 100%;
+	transition: .2s;
+}
+
+.status-health-bar {background-color: var(--red);}
+.status-armor-bar {background-color: var(--grey);}
+.status-mana-bar {background-color: var(--blue);}
+.status-energy-bar {background-color: var(--green);}
+
+.status-label {
+	position: absolute;
+	top: -12px;
+	left: 50%;
+	text-align: center;
+	padding: 0 4px 0 7px;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	transform: translate(-50%);
+	background-color: var(--bg2);
+	border-radius: 5px;
+}
+
+.status-health-label {color: var(--red);}
+.status-armor-label {color: var(--grey);}
+.status-mana-label {color: var(--blue);}
+.status-energy-label {color: var(--green);}
+
+.status-stat-container {
+	position: absolute;
+	bottom: 10px;
+	left: 140px;
+	right: 20px;
+	height: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.status-stat {
+	position: relative;
+	width: 100px;
+	height: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.status-stat:nth-child(1)>div:first-of-type{background-image: url('../../../res/image/icon/str.png');}
+.status-stat:nth-child(2)>div:first-of-type{background-image: url('../../../res/image/icon/int.png');}
+.status-stat:nth-child(3)>div:first-of-type{background-image: url('../../../res/image/icon/agi.png');}
+.status-stat:nth-child(4)>div:first-of-type{background-image: url('../../../res/image/icon/cha.png');}
+
+.status-stat:nth-child(1)>div:last-of-type{color: var(--str);}
+.status-stat:nth-child(2)>div:last-of-type{color: var(--int);}
+.status-stat:nth-child(3)>div:last-of-type{color: var(--agi);}
+.status-stat:nth-child(4)>div:last-of-type{color: var(--cha);}
+
+.status-stat-icon {
+	position: relative;
+	width: 30px;
+	height: 30px;
+}
+
+.status-stat-label {
+	position: relative;
+	font-size: 28px;
+	text-shadow: 0 0 2px black;
+}
